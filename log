@@ -1,0 +1,37 @@
+    1  git clone git@github.com:Ramonrocha1989/Prova_pratica_git.git
+    2  ls
+    3  cd Prova_pratica_git/
+    4  git checkout -b dev
+    5  git tag -a v1.0.0
+    6  git tag
+    7  code .
+    8  ls
+    9  git add base_dev.txt 
+   10  git commit -m ":hammer: Cria base de desenvolvimento"
+   11  git checkout -b feature/produtos
+   12  ls
+   13  git add simula_produtos 
+   14  git commit -m ":white_check_mark: Cria simulador de produtos"
+   15  git push
+   16      git push --set-upstream origin feature/produtos
+   17  git checkout dev
+   18  git merge feature/produtos
+   19  git tag -a v1.1.0
+   20  git checkout -b feature/clientes
+   21  ls
+   22  git add simula_clientes 
+   23  git commit -m ":sparkles: Cria simulador de clientes"
+   24  git checkout dev
+   25  git merge feature/clientes
+   26  git tag -a v1.2.0
+   27  git tag
+   28  ls
+   29  git add REDME.md 
+   30  git commit -m ":memo: Cria Redme.md"
+   31      git push --set-upstream origin feature/produtos
+   32      git push --set-upstream origin dev
+   33  git tag
+   34  git push origin tag v1.0.0
+   35  git push origin tag v1.1.0
+   36  git push origin tag v1.2.0
+   37  history > log
